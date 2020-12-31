@@ -43,6 +43,8 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 3.5rem;
+    font-weight: 600;
+    font-style:italic;
 }
 
 /*#navbar__t3st {
@@ -120,6 +122,7 @@
         max-width: 1300px;
         padding: 0;
     }
+
 
     .navbar__menu {
         display: grid;
@@ -226,6 +229,23 @@
 }
 
 
+/* Hero image scaling */
+@media screen and (max-width: 1500px) {
+
+    .hero { 
+        background: linear-gradient(to right, #1b1b1b, #505050); 
+        /* background-image: url(https://i.ibb.co/LSPvnDc/Habobi-Test-Even-Smaller.png); */
+        background-image: url(https://i.postimg.cc/15t34CPs/Habobi-Test-Smaller.png);
+        padding: 200px 0;
+        justify-content: center;
+        align-items: center;
+        background-repeat:no-repeat;
+        background-size: 110% 100%;
+        background-position: right;
+    }
+}
+
+
 .hero__container {
     display: flex;
     flex-direction: column;
@@ -263,6 +283,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fil-color: transparent; 
+    margin-top: 1rem;
 }
 
 .highlight {
@@ -271,8 +292,7 @@
 
 
 
-
-@media screen and (max-width: 768ox;) {
+@media screen and (max-width: 768px) {
     .hero__heading {
         font-size: 60px;
     }
@@ -318,13 +338,12 @@
    -webkit-text-fill-color: transparent;
    -moz-text-fill-color: transparent; 
    text-transform: uppercase;
-   margin-bottom: 32px;
+   margin-bottom: 35px;
 }
 
 .main__content h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     background: #ffffff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffffff, #5e5e5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
@@ -333,29 +352,40 @@
     -moz-text-fil-color: transparent; 
 }
 
-.main__content p {
-    margin-top: 2rem;
-    font-size: 1.75rem;
-    font-weight: 500;
+.main__content h3 {
+    font-size: 2.6rem;
     background: #ffffff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #5e5e5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fil-color: transparent; 
+    margin-top: 2rem;
+}
+
+.main__content p {
+    margin-top: 7rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    background: #ffffff;  /* fallback for old browsers */
     background: linear-gradient(to left, #ffffff, #c0c0c0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fil-color: transparent; 
+    margin-bottom: -1.2rem;
 }
 
 .main__btn {
     font-size: 1.8rem;
-    background: #3a3a3a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #dbdbdb, #858585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #3a3a3a;
+    background-image: linear-gradient(to top, #f5cb26 0%, #fbd32b 100%);
     padding: 20px 60px;
     border: none;
     border-radius: 4px;
-    color: rgb(255, 255, 255);
+    color: rgb(14, 14, 14);
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
@@ -367,7 +397,7 @@
 .main__btn a {
     position:relative;
     z-index: 2;
-    color: rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
     text-decoration: none;
 }
 
@@ -378,9 +408,10 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #d3be00;
-    transition: all 0.35s;
+    background: #ffffff;
+    transition: all 0.30s;
     border-radius: 4px;
+    background: radial-gradient(#fbd32b 0%, #caa616 100%);
 }
 
 .main__btn:hover {
@@ -414,10 +445,8 @@
 
 #card-2 {
     background: #ffffff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #dbdbdb, #858585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 } 
-
 
 
 
@@ -463,7 +492,7 @@
         text-align: center;
         margin-bottom: 4rem;
         align-items: center;
-        margin-right: 150px;
+        margin-right: 85px;
     }
 
     .main__content {
@@ -487,6 +516,7 @@
         font-size: 1.5rem;
     }
 }
+
 
 @media screen and (max-width: 480px) {
     .main__Img--card {
@@ -546,7 +576,7 @@
 
 .services h1 {
     background-color: #dacc15;
-    background-image: linear-gradient(to right, #ff9c08 0%, #ced119 100%);
+    background-image: linear-gradient(to top, #f5cb26 0%, #fbd32b 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -554,6 +584,7 @@
     -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
     font-size: 3.5rem;
+
 }
 
 .services__wrapper {
@@ -567,20 +598,129 @@
 /* Roster Cards */
 .services__card {
     margin: 35px;
-    height: 450px;
+    height: 475px;
     width: 325px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
-    /*background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);*/
-    background-image: url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/130741817/original/54f9aad5cd4fb27beaed0cb35a53d81e4ef3cfaa/be-your-boyfriend-or-girlfriend-on-r6-siege.jpg);
+    color: rgb(255, 255, 255);
+    background-image: url(https://i.postimg.cc/pXTfMJ3h/Habobi-Test-Even-Smaller.png); /* PLACEHOLDER */
+    background-size: cover;
+    background-position: right;
     transition: 0.3s ease-in;
-    /* https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/130741817/original/54f9aad5cd4fb27beaed0cb35a53d81e4ef3cfaa/be-your-boyfriend-or-girlfriend-on-r6-siege.jpg */
+    background-repeat: no-repeat;
 }
 
 .services__card:nth-child(2) {
-    background-image: linear-gradient(to right, #131413 0%, #fc00ff 100%);
+  /* background-image:  Image goes here */
+}
+
+.services__card:nth-child(3) {
+   /* background-image:  Image goes here */
+}
+
+.services__card:nth-child(4) {
+   /* background-image:  Image goes here */
+}
+
+.services__card h2 {
+    padding-left: 8px;
+}
+
+.services__card p {
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.services__btn {
+    display: flex;
+    padding-left: 8px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.services__card button {
+    color: rgb(19, 19, 19);
+    padding: 9px 8px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #f5cb26 0%, #fbd32b 100%);
+    font-size: 1rem;
 
 }
+
+.services__card button:hover {
+   cursor: pointer;
+   color: rgb(88, 88, 88);
+   background-image: linear-gradient(to right, #f5cb26 0%, #fbd32b 100%);
+   transition: 0.4s ease-in;
+
+}
+
+.services__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+
+}
+
+@media screen and (max-width: 1300px) {
+    .services__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services__wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.sign-up__fields {
+    width: 150%;
+    height: 115%;
+    color: blue;
+    background: blue;
+    margin-left: 100px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    
+}
+
+
+#fname {
+    width: 100%;
+    height: 35px;
+    background-color: yellow;
+    margin-top: 1rem;
+
+}
+
+#lname {
+    width: 235px;
+    height: 35px;
+    background-color: yellow;
+    margin-top: 1rem;
+
+
+}
+
+#submit__btn {
+    background: chartreuse;
+    width: 100px;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+

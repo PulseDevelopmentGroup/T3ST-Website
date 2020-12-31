@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebsiteTest</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
  <nav class="navbar">
@@ -48,13 +47,14 @@
 <div class="main" id="about">
     <div class="main__container">
         <div class="main__img--container">
-            <div class="main__img--vid"><iframe width="860" height="560" src="https://www.youtube.com/embed/6wlvYh0h63k" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="main__img--vid"><iframe style="border: 5px solid rgb(63, 63, 63);" width="860" height="560" src="https://www.youtube.com/embed/6wlvYh0h63k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          </div>
        <div class="main__content">
            <h1>Competive gaming at it's finest</h1>
-           <h2>Backseat gaming? We got it.</h2>
-           <p>Looking for new members!</p>
-           <button class="main__btn"><a href="#">Schedule a tryout</a></button>
+           <h2>Backseat Gaming? We got it!</h2>
+           <h3>Team Compisition? Who Needs It!</h3>
+           <p>Looking for new members</p>
+           <button class="main__btn"><a href="#">Schedule a tryout now</a></button>
        </div> 
     </div>
 </div>
@@ -90,6 +90,28 @@
             <div class="services__btn"><button type="submit" formaction="https://r6.tracker.network/profile/pc/T3ST-Vacuum">Stats</button></div>
             </form>
         </div>
+    </div>
+</div>
+
+<!-- Featured Section -->
+<div class="main" id="sign-up">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>Join our team today!</h1>
+            <h2>Copper never looked so good</h2>
+            <p>Filler Text Please Ignore</p>
+            <button class="main__btn"><a href="https://www.google.com/">Schedule a tryout now</a></button>
+        </div> 
+        <div class="sign-up__fields">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </form>
+            <input type="submit" value="Submit" id="submit__btn">
+         </div>
     </div>
 </div>
 

@@ -1,3 +1,7 @@
+console.log("hello")
+
+/* window.location = $(".services__card").data("https://r6.tracker.network/profile/pc/T3ST-WideBoy"); */
+
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 
