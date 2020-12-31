@@ -76,7 +76,7 @@
     width: 125px;
     text-decoration: none;
     height: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .navbar__btn {
@@ -102,12 +102,12 @@
   background-image: linear-gradient(to top, #f5cb26 0%, #fbd32b 100%);
   
   color: rgb(0, 0, 0);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .navbar__links:hover {
     color: #e2e600;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 
@@ -132,7 +132,7 @@
         position:absolute;
         top: -1000px;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
         z-index: -1;
     }
 
@@ -140,7 +140,7 @@
         background: #131313;
         top: 100%;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
         z-index: 99;
         height: 60vh;
         font-size: 1.6rem;
@@ -158,7 +158,7 @@
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
         background: #fff;  
     }
 
@@ -389,7 +389,7 @@
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
-    transition: all 0.35s;
+    transition: all 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
     outline: none;
 
 }
@@ -409,7 +409,7 @@
     width: 0;
     height: 100%;
     background: #ffffff;
-    transition: all 0.30s;
+    transition: all 0.30s cubic-bezier(0.4, 0.0, 0.2, 1);
     border-radius: 4px;
     background: radial-gradient(#fbd32b 0%, #caa616 100%);
 }
@@ -448,6 +448,17 @@
     background: linear-gradient(to left, #dbdbdb, #858585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 } 
 
+@media screen and (max-width: 1920px) {
+
+    .main__content h1 {
+        margin-left: -150px;
+    }
+
+    .main__img--container {
+        margin-left: 350px;
+        justify-content: center;
+    }
+}
 
 
 /* Mobile */
@@ -608,7 +619,7 @@
     background-image: url(https://i.postimg.cc/pXTfMJ3h/Habobi-Test-Even-Smaller.png); /* PLACEHOLDER */
     background-size: cover;
     background-position: right;
-    transition: 0.3s ease-in;
+    transition: 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
     background-repeat: no-repeat;
 }
 
@@ -655,13 +666,13 @@
    cursor: pointer;
    color: rgb(88, 88, 88);
    background-image: linear-gradient(to right, #f5cb26 0%, #fbd32b 100%);
-   transition: 0.4s ease-in;
+   transition: 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
 
 }
 
 .services__card:hover {
     transform: scale(1.075);
-    transition: 0.3s ease-in;
+    transition: 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 
 }
 
