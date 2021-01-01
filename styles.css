@@ -450,13 +450,21 @@
 
 @media screen and (max-width: 1920px) {
 
-    .main__content h1 {
-        margin-left: -150px;
+    .main__content  {
+        margin-left: -850px;
+        justify-items: center;
+        align-items: center;
+        
     }
 
     .main__img--container {
-        margin-left: 350px;
+        margin-left: -50px;
         justify-content: center;
+    }
+
+    .main__img--vid {
+        margin-right: 1000px;
+        position:sticky;
     }
 }
 
@@ -725,6 +733,16 @@
 #submit__btn {
     background: chartreuse;
     width: 100px;
+}
+
+
+
+/* Sign up resolution support */
+
+@media screen and (max-width: 1920px) {
+    .sign-up__fields {
+        
+    }
 }
 
 
