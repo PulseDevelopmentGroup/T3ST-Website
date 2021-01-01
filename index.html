@@ -95,14 +95,26 @@
 
 <!-- Featured Section -->
 <div class="main" id="sign-up">
-    <div class="main__container">
-        <div class="main__content">
+    <div class="main__container--2">
+        <div class="main__content--2">
             <h1>Join our team today!</h1>
             <h2>Copper never looked so good</h2>
             <p>Filler Text Please Ignore</p>
             <button class="main__btn"><a href="https://www.google.com/">Schedule a tryout now</a></button>
-        </div> 
-        <div class="sign-up__fields">
+            <div class="sign-up__fields">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+    
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </form>
+                <input type="submit" value="Submit" id="submit__btn">
+             </div>
+        </div>
+    </div>
+</div> 
+   <!--   <div class="sign-up__fields">
             <form action="/action_page.php">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name...">
@@ -114,7 +126,7 @@
          </div>
     </div>
 </div>
-
+-->
  <script src="app.js"></script> 
 </body>
 </html>
