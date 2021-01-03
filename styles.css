@@ -344,7 +344,7 @@
 .main__content h2 {
     font-size: 3rem;
     background: #ffffff;  /* fallback for old browsers */
-    background: linear-gradient(to right, #ffffff, #5e5e5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ffffff, #c5c5c5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -355,7 +355,7 @@
 .main__content h3 {
     font-size: 2.6rem;
     background: #ffffff;  /* fallback for old browsers */
-    background: linear-gradient(to right, #ffffff, #5e5e5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ffffff, #a5a5a5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -739,7 +739,7 @@
 }
 
 .main__content--featured h3 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     background: #ffffff;  /* fallback for old browsers */
     background: linear-gradient(to right, #ffffff, #5e5e5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
@@ -764,7 +764,7 @@
     margin-bottom: -1.2rem;
 }
 
-.main__btn {
+.main__btn--2 {
     font-size: 1.8rem;
     background: #3a3a3a;
     background-image: linear-gradient(to top, #f5cb26 0%, #fbd32b 100%);
@@ -772,22 +772,21 @@
     border: none;
     border-radius: 4px;
     color: rgb(14, 14, 14);
-    margin-top: 2rem;
+    margin-top: 50px;
     cursor: pointer;
     position: relative;
     transition: all 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
     outline: none;
-
 }
 
-.main__btn a {
+.main__btn--2 a {
     position:relative;
     z-index: 2;
     color: rgb(22, 22, 22);
     text-decoration: none;
 }
 
-.main__btn:after {
+.main__btn--2:after {
     position: absolute;
     content: '';
     top: 0;
@@ -800,11 +799,11 @@
     background: radial-gradient(#fbd32b 0%, #caa616 100%);
 }
 
-.main__btn:hover {
+.main__btn--2:hover {
     color: rgba(255, 255, 255, 0.067);
 }
 
-.main__btn:hover:after {
+.main__btn--2:hover:after {
     width: 100%;
 }
 
@@ -824,39 +823,42 @@ padding: 0 100px;
 }
 
 
-.signup__container  {
+/* .signup__container  {
     margin-left: 700px;
     width: 500px;
-    height: 300px;
+    height: 3500px;
     justify-content: center;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr;
-}
+} */
 
 #form {
     align-items: center;
     justify-content: center;
     width: 500px;
     margin-left: 300px;
+
 }
 
 #fname {
 
     background-color: rgba(75, 75, 75, 0.021);
-    width: 350px;
-    height: 60px;
+    width: 425px;
+    height: 75px;
     color: #fff;
 
     
 
 }
 
+
+
 #lname {
 
     background-color: rgba(75, 75, 75, 0.021);
-    width: 350px;
-    height: 60px;
+    width: 425px;
+    height: 75px;
     margin-top: 60px;
     color: #fff;
 
@@ -871,7 +873,7 @@ padding: 0 100px;
     border: none;
     border-radius: 4px;
     color: rgb(14, 14, 14);
-    margin-top: 2rem;
+    margin-top: 3rem;
     cursor: pointer;
     position: relative;
     transition: all 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -889,9 +891,7 @@ padding: 0 100px;
 /* Sign up resolution support */
 
 @media screen and (max-width: 1920px) {
-    .sign-up__fields {
-        
-    }
+
 }
 
 
