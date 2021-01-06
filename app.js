@@ -12,3 +12,9 @@ const mobileMenu = () => {
 }
 
 menu.addEventListener('click',mobileMenu);
+
+
+/* function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  } */
