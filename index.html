@@ -30,7 +30,7 @@
                 <a href="#services" class="navbar__links" id="services-page">Roster</a>
             </li>
             <li class="navbar__btn">
-                <a href="#sign-up" class="button" id="signup">Apply</a>
+                <a href="#apply" class="button" id="signup">Apply</a>
             </li>
          </ul>
      </div>
@@ -44,7 +44,7 @@
      </div>
  </div>
 
-<div class="main" id="about">
+<div class="main" id="about"> 
     <div class="main__container">
         <div class="main__img--container">
             <div class="main__img--vid"><iframe style="border: 5px solid rgb(63, 63, 63);" width="860" height="560" src="https://www.youtube.com/embed/6wlvYh0h63k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -54,7 +54,7 @@
            <h2>Backseat Gaming? We got it!</h2>
            <h3>Team Compisition? Who Needs It!</h3>
            <p>Looking for new members</p>
-           <button class="main__btn"><a href="#">Schedule a tryout now</a></button>
+           <button class="main__btn"><a method="get" target="_blank" href="mailto:T3STClanR6@gmail.com">Schedule a tryout</a></button>
        </div> 
     </div>
 </div>
@@ -94,15 +94,31 @@
 </div>
 
 <!-- Featured Section -->
-<div class="main" id="sign-up">
-    <div class="main__container">
-        <div class="main__content">
+<div class="main" id="apply">
+    <div class="main__container--2">
+        <div class="main__content--featured">
             <h1>Join our team today!</h1>
             <h2>Copper never looked so good</h2>
-            <p>Filler Text Please Ignore</p>
-            <button class="main__btn"><a href="https://www.google.com/">Schedule a tryout now</a></button>
+            <h3>Use the button below to email us any questions</h3>
+            <button class="main__btn--2"><a method="get" target="_blank" href="mailto:T3STClanR6@gmail.com">Email us</a></button>
         </div> 
-        <div class="sign-up__fields">
+       <!-- <div class="signup__container"> -->
+            <form id="form" >
+                <label for="fname"></label>
+                <input type="email" id="fname" name="firstname" placeholder="Your email address..">
+                <label for="lname"></label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Uplay username..">
+               
+                <div class="popup" onclick="myFunction()">
+                <input type="submit" value="Apply" id="submit__btn" > <!-- <span class="popuptext" id="myPopup">Submitted!</span></input> -->
+                </div>
+            </form>
+       <!--  </div> -->
+    </div>
+</div>
+
+
+   <!--   <div class="sign-up__fields">
             <form action="/action_page.php">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name...">
@@ -114,7 +130,7 @@
          </div>
     </div>
 </div>
-
+-->
  <script src="app.js"></script> 
 </body>
 </html>
