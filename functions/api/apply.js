@@ -1,4 +1,4 @@
-async function onRequestPost(request) {
+export async function onRequestPost(request) {
   const { pathname } = new URL(request.url);
 
   switch (pathname) {
@@ -22,8 +22,8 @@ Username: ${user}`;
         },
       });
 
-      return Response.redirect("https://t3st.games");
+      return new Response.redirect("https://t3st.games");
     default:
-      return Response.redirect("https://t3st.games");
+      return new Response.redirect("https://t3st.games");
   }
 }
